@@ -1,0 +1,40 @@
+.introduction {
+    color: whitesmoke;
+}
+
+.introduction .into{
+    background-color: #798fa8;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 18px;
+}
+
+.introduction .into em {
+    color: #0F4C81;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.introduction .heading {
+    color: #0F4C81;
+    font-size: 30px;
+}
+
+section .heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.my-mood .content {
+    display: inline-block;
+}
+
+.my-mood img {
+    height: 200px;
+    width: 200px;
+}
+
+.my-mood img:hover {
+    height: 300px;
+    width: 300px;
+}

@@ -35,6 +35,10 @@ section .heading {
 }
 
 .my-mood img:hover {
-    height: 300px;
-    width: 300px;
+    height: 220px;
+    width: 220px;
+}
+
+.my-neighbor .heading {
+    padding-top: 20px;
 }

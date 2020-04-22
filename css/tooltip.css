@@ -7,7 +7,7 @@
 /* Tooltip text */
 .tooltip .tooltip-text {
     visibility: hidden;
-    width: 300px;
+    width: 220px;
     background-color: #798fa8;
     color: #0F4C81;
     text-align: center;

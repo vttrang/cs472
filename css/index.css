@@ -8,21 +8,19 @@ header h1 {
     text-align: center;
     text-transform: capitalize;
 }
-section.myself img {
+section img#myself {
     width: 230px;
     height: 300px;
     border-radius: 5%;
+    flex: 1;
 }
 
-section.myself {
-    display: inline-flex;
+section.info {
+    display: flex;
+    padding-left: 20px;
     padding-right: 20px;
 }
 
-section.myself h1 {
-    padding-left: 20px;
-}
-
-section.myself .hobbies{
-    padding-left: 35px;
+section.info h1 {
+    flex: 0 0 65%;
 }

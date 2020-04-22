@@ -1,3 +1,8 @@
+section .heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .introduction {
     color: whitesmoke;
 }
@@ -20,13 +25,20 @@
     font-size: 30px;
 }
 
-section .heading {
-    font-size: 20px;
-    font-weight: bold;
+section li:hover {
+    background-color: #798fa8;
+    border-radius: 18px;
+    color: whitesmoke;
+}
+
+section li {
+    padding: 5px;
+    width: 300px;
 }
 
 .my-mood .content {
     display: inline-block;
+    height: 250px;
 }
 
 .my-mood img {
@@ -39,6 +51,6 @@ section .heading {
     width: 220px;
 }
 
-.my-neighbor .heading {
-    padding-top: 20px;
+.my-neighbor li {
+    width: 440px;
 }

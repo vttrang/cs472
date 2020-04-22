@@ -3,6 +3,22 @@ section .heading {
     font-weight: bold;
 }
 
+section.classes-schedule li:hover, section.my-neighbor li:hover, section.favourite-movies li:hover {
+    background-color: #798fa8;
+    border-radius: 18px;
+    color: whitesmoke;
+}
+
+section.classes-schedule, section.favourite-movies li{
+    padding: 5px;
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: #0F4C81;
+}
+
 .introduction {
     color: whitesmoke;
 }
@@ -25,18 +41,12 @@ section .heading {
     font-size: 30px;
 }
 
-section li:hover {
-    background-color: #798fa8;
-    border-radius: 18px;
-    color: whitesmoke;
+.favourite-movies ol {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-section li {
-    padding: 5px;
-    width: 300px;
-}
-
-.my-mood .content {
+.my-mood .content .tooltip {
     display: inline-block;
     height: 250px;
 }
@@ -47,10 +57,10 @@ section li {
 }
 
 .my-mood img:hover {
-    height: 220px;
     width: 220px;
 }
 
-.my-neighbor li {
+section.my-neighbor li {
     width: 440px;
+    padding: 5px;
 }

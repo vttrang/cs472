@@ -4,6 +4,11 @@ body, html {
     background-color: #fff;
 }
 
+body {
+    margin: 0;
+    width: 100%;
+}
+
 ul.breadcrumb {
     font-family: 'Baloo Bhaina 2', cursive;
 }

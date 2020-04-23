@@ -1,6 +1,33 @@
 body {
     background-image: url("../images/background.png");
 }
+@media screen and (min-width:600px) {
+    nav {
+        float: right;
+        width: 250px;
+        height: auto;
+        background-color: #A2B964;
+        border-top-right-radius: 18px;
+        font-size: 8pt;
+        font-family: Arial, sans-serif;
+    }
+    #review {
+        margin-right: 31%;
+        width:550px;
+        column-count: 2;
+    }
+
+}
+@media screen and (max-width:599px) {
+    nav {
+        border: 1px solid gray;
+        display: inline;
+    }
+    #review {
+        border: 1px solid gray;
+        height: 100px;
+    }
+}
 h1 {
     text-align: center;
     font-size: 24pt;
@@ -21,7 +48,6 @@ h1 {
     height: 83px;
     margin-bottom: 10px;
 }
-
 .rotten img{
     border-top-left-radius: 18px;
 }
@@ -38,36 +64,6 @@ h1 {
 .content{
     overflow: auto;
 }
-
-@media screen and (min-width:600px) {
-    nav {
-        float: right;
-        width: 250px;
-        height: auto;
-        background-color: #A2B964;
-        border-top-right-radius: 18px;
-        font-size: 8pt;
-        font-family: Arial, sans-serif;
-    }
-    #review {
-        margin-right: 31%;
-        width:550px;
-        column-count: 2;
-    }
-
-}
-
-@media screen and (max-width:599px) {
-    nav {
-        border: 1px solid gray;
-        display: inline;
-    }
-    #review {
-        border: 1px solid gray;
-        height: 100px;
-    }
-}
-
 nav img{
     border-top-right-radius: 18px;
     margin-bottom: 10pt;

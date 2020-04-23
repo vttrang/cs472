@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/movie/background.png");
+    background-image: url("../images/background.png");
 }
 h1 {
     text-align: center;
@@ -8,11 +8,11 @@ h1 {
     text-shadow: 3px 3px #999999;
 }
 .banner {
-    background-image: url("../images/movie/bannerbg.png");
+    background-image: url("../images/bannerbg.png");
     text-align: center;
 }
 .rotten {
-    background-image: url("../images/movie/rbg.png");
+    background-image: url("../images/rbg.png");
     font-size: 48pt;
     font-weight: bold;
     color: red;

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.4.1/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./css/form.css">
-    <script src="../lib/http_code.jquery.com_jquery-3.5.0.js"></script>
     <script src="../lib/bootstrap-4.4.1/js/bootstrap.bundle.js"></script>
     <title>Web Form 2</title>
 </head>
@@ -54,17 +53,13 @@
                 <input type="text" class="form-control" id="productName">
             </div>
             <div class="col">
-                <label for="dropdownSupplier">Supplier</label>
-                <div class="dropdown">
-                    <button class="btn btn-outline-secondary dropdown-toggle btn-block text-left" type="button" id="dropdownSupplier" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select a supplier
-                    </button>
-                    <div class="dropdown-menu btn-block" aria-labelledby="dropdownSupplier">
-                        <a class="dropdown-item " href="#">Walmart</a>
-                        <a class="dropdown-item " href="#">Cosco</a>
-                        <a class="dropdown-item " href="#">Hyvee</a>
-                    </div>
-                </div>
+                <label for="supplier">Supplier</label>
+                <select class="browser-default custom-select" id="supplier">
+                    <option selected>Select a supplier</option>
+                    <option value="1">Walmart</option>
+                    <option value="2">Cosco</option>
+                    <option value="3">Hyvee</option>
+                </select>
             </div>
         </div>
 

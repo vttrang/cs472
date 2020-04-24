@@ -2,11 +2,11 @@ a {
     text-decoration: none;
     color: #0F4C81;
 }
-body {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
 div#validator {
     float: right;
+}
+.container {
+    margin: auto;
+    width: 50%;
+    padding-top: 40px;
 }

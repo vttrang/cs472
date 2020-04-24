@@ -11,7 +11,7 @@ section.classes-schedule li:hover, section.my-neighbor li:hover, section.favouri
 
 section.classes-schedule, section.favourite-movies li{
     padding: 5px;
-    width: 300px;
+    width: 100%;
 }
 
 .introduction {
@@ -50,12 +50,24 @@ section.classes-schedule, section.favourite-movies li{
     height: 200px;
     width: 200px;
 }
-
 .my-mood img:hover {
     width: 220px;
 }
+section.my-mood .content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+section.my-neighbor {
+    padding-top: 20px;
+}
 
 section.my-neighbor li {
-    width: 340px;
+    width: 100%;
     padding: 5px;
+}
+
+.bg-classic-blue {
+    background-color: #0f4c81;
 }

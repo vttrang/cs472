@@ -2,92 +2,99 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./lib/bootstrap-4.4.1/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/about-me.css">
-        <link rel="stylesheet" type="text/css" href="css/tooltip.css">
         <link rel="stylesheet" type="text/css" href="css/util.css">
         <title>About Me</title>
     </head>
     <body>
-        <div class="container">
-            <header>
-                <a href="./index.html">Home</a>
-            </header>
-            <main>
-                <section class="introduction">
-                    <h2 class="heading">About The Vinh Trang</h2>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-classic-blue">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand my-nav-text-color" href="./index.html">CS 472 - The Vinh Trang</a>
+                </li>
+                <li class="nav-item active border-left mx-2">
+                    <a class="nav-link my-nav-text-color" href="./index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="introduction">
+            <h2 class="heading">About The Vinh Trang</h2>
 
-                    <div class="into">
-                        <p>My name is <em>Vinh Trang</em> (The is my middle name).</p>
-                        <p><em>Cheerful, warm and introvert</em> are what my friends comment about me.</p>
-                    </div>
-                </section>
+            <div class="into">
+                <p>My name is <em>Vinh Trang</em> (The is my middle name).</p>
+                <p><em>Cheerful, warm and introvert</em> are what my friends comment about me.</p>
+            </div>
+        </section>
 
-                <section class="classes-schedule">
-                    <h2 class="heading">My class this quarter: </h2>
-                    <ul>
-                        <li>CS401 - Modern Programing Practice</li>
-                        <li>CS 523 - Big Data Technology</li>
-                        <li>CS472 - Web Application Programming</li>
-                    </ul>
-                </section>
+        <section class="classes-schedule">
+            <h2 class="heading">My class this quarter: </h2>
+            <ul>
+                <li>CS401 - Modern Programing Practice</li>
+                <li>CS 523 - Big Data Technology</li>
+                <li>CS472 - Web Application Programming</li>
+            </ul>
+        </section>
 
-                <section class="favourite-movies">
-                    <h2 class="heading">My favorite movies/show:</h2>
-                    <ol>
-                        <li>
-                            Avenger - Infinity War <a href="https://www.imdb.com/title/tt4154796/">(IMDB)</a>
-                            <dl>
-                                <dt>Directors</dt>
-                                <dd> Anthony Russo, Joe Russo</dd>
-                                <dt>Writers</dt>
-                                <dd> Christopher Markus, Stephen McFeely </dd>
-                                <dt>Stars</dt>
-                                <dd> Robert Downey Jr., Chris Hemsworth, Mark Ruffalo</dd>
-                            </dl>
-                        </li>
-                        <li>
-                            Avenger - End Game <a href="https://www.imdb.com/title/tt4154756/">(IMDB)</a>
-                        </li>
-                        <li>
-                            Shameless <a href="https://www.imdb.com/title/tt1586680/">(IMDB)</a>
-                        </li>
-                    </ol>
-                </section>
+        <section class="favourite-movies">
+            <h2 class="heading">My favorite movies/show:</h2>
+            <ol>
+                <li>
+                    Avenger - Infinity War <a href="https://www.imdb.com/title/tt4154796/">(IMDB)</a>
+                    <dl>
+                        <dt>Directors</dt>
+                        <dd> Anthony Russo, Joe Russo</dd>
+                        <dt>Writers</dt>
+                        <dd> Christopher Markus, Stephen McFeely </dd>
+                        <dt>Stars</dt>
+                        <dd> Robert Downey Jr., Chris Hemsworth, Mark Ruffalo</dd>
+                    </dl>
+                </li>
+                <li>
+                    Avenger - End Game <a href="https://www.imdb.com/title/tt4154756/">(IMDB)</a>
+                </li>
+                <li>
+                    Shameless <a href="https://www.imdb.com/title/tt1586680/">(IMDB)</a>
+                </li>
+            </ol>
+        </section>
 
-                <section class="my-mood">
-                    <h2 class="heading">My mood:</h2>
-                    <div class="content">
-                        <div class="tooltip">
-                            <div class="tooltip-text">This is when I'm happy</div>
-                            <img src="images/happy.jpg" alt="When I'm happy">
-                        </div>
-                        <div class="tooltip">
-                            <div class="tooltip-text">This is when I'm NOT happy</div>
-                            <img src="images/sad.jpg" alt="When I'm NOT happy">
-                        </div>
-                    </div>
-                </section>
-
-                <section class="my-neighbor">
-                    <h2 class="heading">Fun facts about my neighbors:</h2>
-                    <ol>
-                        <li>Cuong Nguyen: he's just like Baby in Baby driver.</li>
-                        <li>Phan Anh Nguyen: he's totally a Night Owl</li>
-                    </ol>
-
-                </section>
-            </main>
-
-            <footer>
-                <div id="validator">
-                    <a href="https://validator.w3.org/check?uri=https://vttrang.github.io/cs472/">
-                        <img src="./images/assets/w3c-html.png" alt="html validator">
-                    </a>
-                    <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://vttrang.github.io/cs472/">
-                        <img src="./images/assets/w3c-css.png" alt="css validator">
-                    </a>
+        <section class="my-mood">
+            <h2 class="heading">My mood:</h2>
+            <div class="content">
+                <div class="happy">
+                    <div>Happy</div>
+                    <img src="images/happy.jpg" alt="When I'm happy">
                 </div>
-            </footer>
+                <div class="sad">
+                    <div>Sad</div>
+                    <img src="images/sad.jpg" alt="When I'm NOT happy">
+                </div>
+            </div>
+        </section>
+
+        <section class="my-neighbor">
+            <h2 class="heading">Fun facts about my neighbors:</h2>
+            <ol>
+                <li>Cuong Nguyen: he's just like Baby in Baby driver.</li>
+                <li>Phan Anh Nguyen: he's totally a Night Owl</li>
+            </ol>
+
+        </section>
+    </main>
+
+    <footer>
+        <div id="validator">
+            <a href="https://validator.w3.org/check?uri=https://vttrang.github.io/cs472/">
+                <img src="./images/assets/w3c-html.png" alt="html validator">
+            </a>
+            <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://vttrang.github.io/cs472/">
+                <img src="./images/assets/w3c-css.png" alt="css validator">
+            </a>
         </div>
+    </footer>
     </body>
 </html>

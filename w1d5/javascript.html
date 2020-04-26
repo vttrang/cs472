@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script</title>
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.4.1/css/bootstrap.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron'>
+    <link rel="stylesheet" type="text/css" href="../w1d4/css/form.css">
+    <script src="./javascript/commands.js"></script>
+    <script src="./javascript/util.js"></script>
+</head>
+<body onload="showTime()">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-classic-blue">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="navbar-brand my-nav-text-color" href="../index.html">Java Script | W1D5</a>
+            </li>
+            <li class="nav-item active border-left mx-2">
+                <a class="nav-link my-nav-text-color" href="../index.html">Home</a>
+            </li>
+        </ul>
+        <div id="clock" class="clock "></div>
+    </nav>
+</header>
+<div class="content">
+    <form class="needs-validation">
+        <div class="form-group row">
+            <label for="selectMethod">Method</label>
+            <select class="browser-default custom-select form-control form-control-lg" id="selectMethod" required>
+                <option selected>Select a method</option>
+                <option value="1">max()</option>
+                <option value="2">maxOfThree()</option>
+                <option value="3">isVowel()</option>
+                <option value="4">sum()</option>
+                <option value="5">multiply()</option>
+                <option value="6">reserve()</option>
+                <option value="7">findLongestWord()</option>
+                <option value="8">filterLongWords()</option>
+                <option value="9">computeSumOfSquares()</option>
+                <option value="10">printOddNumberOnly()</option>
+                <option value="11">computeSumOfSquaresOfEvensOnly()</option>
+                <option value="12">findSecondBiggest()</option>
+                <option value="13">printFibonacci()</option>
+            </select>
+        </div>
+
+        <div class="form-group row">
+            <label for="inputData">Input</label>
+            <input type="text" class="form-control" id="inputData" required>
+            <small id="dateSuppliedHelp" class="form-text text-muted">Enter a valid input(charater, number(1,2,3,4) or a string).</small>
+        </div>
+
+        <div class="form-group text-right">
+            <button type="reset" class="btn btn-outline-dark mr-5">Reset</button>
+            <button class="btn btn-outline-primary" onclick="showResult()">Show result</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -18,3 +18,8 @@ form.form2{
 .bg-classic-blue{
     background-color: #0f4c81;
 }
+
+#clock {
+    font-family: 'Orbitron', sans-serif;
+    color: whitesmoke;
+}

@@ -116,9 +116,8 @@ function printFibonacci(n, a, b) {
 
 function showTime() {
     let today = new Date();
-    let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    let date = today.getFullYear()+'-'+today.getDate()+'-'+(today.getMonth()+1);
     let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     document.getElementById("clock").innerText = date+' '+time;
-    // document.getElementById("clock").textContent = date + ' ' + time;
     setTimeout(showTime, 1000);
 }

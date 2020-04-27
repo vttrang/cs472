@@ -72,11 +72,11 @@ function myComputeSumOfSquares(total, num) {
 }
 
 function filterOddNumbers(arr) {
-    return arr.filter(currentValue => currentValue % 2 === 0);
+    return arr.filter(currentValue => currentValue % 2 !== 0);
 }
 
 function filterEvenNumbers(arr) {
-    return arr.filter(currentValue => currentValue % 2 !== 0);
+    return arr.filter(currentValue => currentValue % 2 === 0);
 }
 
 function computeSumOfSquaresOfEvens(arr) {

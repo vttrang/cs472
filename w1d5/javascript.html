@@ -6,8 +6,8 @@
     <link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.4.1/css/bootstrap.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron'>
     <link rel="stylesheet" type="text/css" href="../w1d4/css/form.css">
-    <script src="./javascript/commands.js"></script>
-    <script src="./javascript/util.js"></script>
+    <script src="js/commands.js"></script>
+    <script src="js/util.js"></script>
 </head>
 <body onload="showTime()">
 <header>
@@ -28,7 +28,7 @@
         <div class="form-group row">
             <label for="selectMethod">Method</label>
             <select class="browser-default custom-select form-control form-control-lg" id="selectMethod" required>
-                <option selected>Select a method</option>
+                <option value="" selected>Select a method</option>
                 <option value="1">max()</option>
                 <option value="2">maxOfThree()</option>
                 <option value="3">isVowel()</option>
@@ -53,7 +53,7 @@
 
         <div class="form-group text-right">
             <button type="reset" class="btn btn-outline-dark mr-5">Reset</button>
-            <button class="btn btn-outline-primary" onclick="showResult()">Show result</button>
+            <button type="submit" class="btn btn-outline-primary" onclick="showResult()">Show result</button>
         </div>
     </form>
 </div>

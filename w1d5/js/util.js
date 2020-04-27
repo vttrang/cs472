@@ -1,12 +1,15 @@
-"use strict";
-function showResult() {
+// jshint esversion: 6
+/*jslint node: true*/
 
+"use strict";
+
+function showResult() {
     alert(calculate());
 }
 
 function getSelectedMethod() {
     let value = 0;
-    let methodElement = document.getElementById("selectMethod");
+    const methodElement = document.getElementById("selectMethod");
     value = methodElement.options[methodElement.selectedIndex].value;
     return value;
 }
@@ -18,7 +21,7 @@ function getInPut() {
 }
 
 function calculate() {
-    let value = getSelectedMethod();
+    const value = getSelectedMethod();
     let result;
     switch (value) {
         case '1': result = getMax(); break;
@@ -34,24 +37,25 @@ function calculate() {
         case '11': result = getSumOfSquaresOfEvens(); break;
         case '12': result = getSecondBiggest(); break;
         case '13': result = getFibonacci(); break;
+        default: result = "You haven't chosen the method";
     }
     return result;
 }
 
 function getMax() {
-    let input = getInPut();
-    let values = input.split(",");
+    const input = getInPut();
+    const values = input.split(",");
     return max(values[0], values[1]);
 }
 
 function getMaxOfThree() {
-    let input = getInPut();
-    let values = input.split(",");
+    const input = getInPut();
+    const values = input.split(",");
     return maxOfThree(values[0], values[1], values[2]);
 }
 
 function getIsVowel() {
-    let input = getInPut();
+    const input = getInPut();
     let result = false;
     if (input.length === 1) {
         result = isVowel(input);
@@ -60,32 +64,32 @@ function getIsVowel() {
 }
 
 function getSum() {
-    let input = getInPut();
-    let values = input.split(',');
+    const input = getInPut();
+    const values = input.split(',');
     return sum(values);
 }
 
 function getMultiply() {
-    let input = getInPut();
-    let values = input.split(',');
+    const input = getInPut();
+    const values = input.split(',');
     return multiply(values);
 }
 
 function getReserve() {
-    let input = getInPut();
-    let values = input.split('');
+    const input = getInPut();
+    const values = input.split('');
     return reserve(values);
 }
 
 function getLongestWord() {
-    let input = getInPut();
-    let values = input.split(',');
+    const input = getInPut();
+    const values = input.split(',');
     return findLongestWord(values);
 }
 
 function getFilterLongWords() {
-    let input = getInPut();
-    let values = input.split(',');
+    const input = getInPut();
+    const values = input.split(',');
     let words = [];
     for (let i = 0; i < values.length - 1; i++) {
         words.push(values[i]);
@@ -94,31 +98,31 @@ function getFilterLongWords() {
 }
 
 function getSumOfSquares() {
-    let input = getInPut();
-    let values = input.split(',');
+    const input = getInPut();
+    const values = input.split(',');
     return computeSumOfSquares(values);
 }
 
 function getOddNumber() {
-    let input = getInPut();
-    let values = input.split(',');
+    const input = getInPut();
+    const values = input.split(',');
     return filterOddNumbers(values);
 }
 
 function getSumOfSquaresOfEvens() {
-    let input = getInPut();
-    let values = input.split(',');
+    const input = getInPut();
+    const values = input.split(',');
     return computeSumOfSquaresOfEvens(values);
 }
 
 function getSecondBiggest() {
-    let input = getInPut();
-    let values = input.split(',');
+    const input = getInPut();
+    const values = input.split(',');
     return finSecondBiggest(values);
 }
 
 function getFibonacci() {
-    let input = getInPut();
-    let values = input.split(',');
+    const input = getInPut();
+    const values = input.split(',');
     return printFibonacci(values);
 }

@@ -1,7 +1,11 @@
+// jshint esversion: 6
+/*jslint node: true*/
+
 "use strict";
-function max(a, b) {
+
+const max = function max(a, b) {
     return a > b ? a : b;
-}
+};
 
 function maxOfThree(a, b, c) {
     let max = a;
@@ -56,7 +60,7 @@ function findLongestWord(arr) {
 
 function filterLongWords(arr, n) {
     if (arr.length > 1) {
-        return arr.filter(currentValue => currentValue.length > n)
+        return arr.filter(currentValue => currentValue.length > n);
     }
     return [];
 }
@@ -85,9 +89,9 @@ function computeSumOfSquaresOfEvens(arr) {
 }
 
 function finSecondBiggest(arr) {
-    if (arr.length === 0)
+    if (arr.length === 0) {
         return null;
-
+    }
     let secondMax = 0, max = arr[0];
 
     for (let i = 0; i <arr.length; i++) {
@@ -95,8 +99,9 @@ function finSecondBiggest(arr) {
             secondMax = max;
             max = arr[i];
         }
-        else if(arr[i]>max && arr[i] !== secondMax)
+        else if(arr[i]>max && arr[i] !== secondMax) {
             max = arr[i];
+        }
     }
     return secondMax;
 }
@@ -119,5 +124,6 @@ function showTime() {
     let date = today.getFullYear()+'-'+today.getDate()+'-'+(today.getMonth()+1);
     let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     document.getElementById("clock").innerText = date+' '+time;
+    document.getElementById("clock").textContent = date+' '+time;
     setTimeout(showTime, 1000);
 }

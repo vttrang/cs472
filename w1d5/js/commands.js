@@ -40,11 +40,21 @@ function myMultiply(total, num) {
 }
 
 function reserve(arr) {
-    let result = "";
-    for (let i = arr.length - 1 ; i >= 0; i--) {
-        result += arr[i];
+    // let result = "";
+    // for (let i = arr.length - 1 ; i >= 0; i--) {
+    //     result += arr[i];
+    // }
+    // return result;
+    let i = 0;
+    let j = arr.length;
+    while (i !== j) {
+        const temp = arr[i];
+        arr[i] = arr[j -1];
+        arr[j-1] = temp;
+        i ++;
+        j --;
     }
-    return result;
+    return arr;
 }
 
 function findLongestWord(arr) {
@@ -119,11 +129,16 @@ function printFibonacci(n, a, b) {
     return arr;
 }
 
+let turnClockOn;
 function showTime() {
     let today = new Date();
     let date = today.getFullYear()+'-'+today.getDate()+'-'+(today.getMonth()+1);
     let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     document.getElementById("clock").innerText = date+' '+time;
     document.getElementById("clock").textContent = date+' '+time;
-    setTimeout(showTime, 1000);
+    turnClockOn = setTimeout(showTime, 1000);
+}
+
+function turnClockOff() {
+    clearTimeout(turnClockOn);
 }

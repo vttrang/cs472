@@ -5,7 +5,7 @@
     <title>Java Script</title>
     <link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.4.1/css/bootstrap.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron'>
-    <link rel="stylesheet" type="text/css" href="../w1d4/css/form.css">
+    <link rel="stylesheet" type="text/css" href="./css/javascript.css">
     <script src="js/commands.js"></script>
     <script src="js/util.js"></script>
 </head>
@@ -20,11 +20,13 @@
                 <a class="nav-link my-nav-text-color" href="../index.html">Home</a>
             </li>
         </ul>
-        <div id="clock" class="clock "></div>
+
+        <div id="clock" class="clock mr-2"></div>
+        <button class="off-clock btn-outline-light" onclick="turnClockOff()">Stop ticking!</button>
     </nav>
 </header>
 <div class="content">
-    <form class="needs-validation">
+    <div class="container">
         <div class="form-group row">
             <label for="selectMethod">Method</label>
             <select class="browser-default custom-select form-control form-control-lg" id="selectMethod" required>
@@ -55,7 +57,7 @@
             <button type="reset" class="btn btn-outline-dark mr-5">Reset</button>
             <button type="submit" class="btn btn-outline-primary" onclick="showResult()">Show result</button>
         </div>
-    </form>
+    </div>
 </div>
 </body>
 </html>

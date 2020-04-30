@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../css/util.css">
+    <link rel="stylesheet" href="./css/forms.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="./js/loginForm.js" async defer></script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-classic-blue">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand my-nav-text-color" href="../index.html">W2D3 | Login Form</a>
+                </li>
+                <li class="nav-item border-left mx-2">
+                    <a class="nav-link my-nav-text-color" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item border-left mx-2">
+                    <a class="nav-link my-nav-text-color" href="../index.html">W2D3</a>
+                </li>
+                <li class="nav-item border-left mx-2 active">
+                    <a class="nav-link my-nav-text-color" href="./loginForm.html">Login Form</a>
+                </li>
+                <li class="nav-item border-left mx-2">
+                    <a class="nav-link my-nav-text-color" href="./productForm.html">New Product Form</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <form class="needs-validation form1">
+                <div class="form-group">
+                    <label for="inputEmail">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputURL">URL</label>
+                    <input type="url" class="form-control" id="inputURL" placeholder="URL" pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$" required>
+                </div>
+                <div class="form-check form-group">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" onclick="displayForm1Info()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

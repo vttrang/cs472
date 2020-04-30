@@ -3,11 +3,14 @@
 
 "use strict";
 
+let cancleBigger;
 function btnClicked() {
   alert("Hello, world!");
-      setInterval(increaseTextAreaFontSize, 500);
+  cancleBigger = setInterval(increaseTextAreaFontSize, 500);
 }
-
+function turnClockOff() {
+    clearTimeout(cancleBigger);
+}
 function increaseTextAreaFontSize() {
   const textArea = document.getElementById("textarea");
   textArea.style.fontSize = parseInt(window.getComputedStyle(textArea)

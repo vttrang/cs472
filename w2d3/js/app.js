@@ -1,5 +1,3 @@
-// jshint esversion: 6
-/*jslint node: true*/
 $(document).ready(function() {
     "use strict";
     // Prob 1

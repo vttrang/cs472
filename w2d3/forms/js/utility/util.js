@@ -1,7 +1,7 @@
 class Util {
     static isEmpty(value) {
         return undefined === value || '' === value;
-    };
+    }
     static formatDate(date) {
         let d = new Date(date),
             month = '' + (d.getMonth() + 1),

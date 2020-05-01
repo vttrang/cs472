@@ -28,4 +28,4 @@ $(document).ready(function() {
         productForm.add(productName, productNumber, unitPrice, quantityInStock, supplier, dateSupplied);
         $('#result').html(productForm.toString());
     });
-})
+});

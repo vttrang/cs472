@@ -1,30 +1,30 @@
 "use strict";
-
 const count = (function() {
     let counter = 0; // Prob7, counter is a free variable for functions (add, reset and on what assign value to it)
 
     // Prob 6
     const add = function() {
         return counter += 1;
-    }
+    };
 
     // Prob 6
     const reset = function() {
-        return counter = 0;
-    }
+        counter = 0;
+        return counter;
+    };
 
     // Prob 8 - 1 way
     const make_adder = function(inc) {
         return function() {
             return counter += inc;
         };
-    }
+    };
 
     return {
         add: add,
         reset: reset,
         make_adder: make_adder
-    }
+    };
 })();
 
 console.log(count.add());
@@ -43,8 +43,8 @@ count.make_adder_2 = function(inc) {
             i--;
         }
         return result;
-    }
-}
+    };
+};
 count.reset();
 const add3 = count.make_adder_2(3);
 console.log(add3());
@@ -99,9 +99,9 @@ const employee = (function() {
 employee.address = '';
 employee.setAddress = function(add) {
     employee.address = add;
-}
+};
 employee.getAdress = function() {
     return employee.address;
-}
+};
 employee.setAddress('ABC');
 console.log(`${employee.address}`);

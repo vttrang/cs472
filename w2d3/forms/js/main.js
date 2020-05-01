@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    "use strict";
     $('#loginForm #submitForm').click(function(e) {
         e.preventDefault();
         let email, password, url, checked;

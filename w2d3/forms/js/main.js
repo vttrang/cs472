@@ -1,6 +1,6 @@
 $(document).ready(function() {
     "use strict";
-    $('#loginForm #submitForm').click(function(e) {
+    $('#loginForm').on('submit', function(e) {
         e.preventDefault();
         let email, password, url, checked;
         email = $('#inputEmail').val();
@@ -15,7 +15,7 @@ $(document).ready(function() {
             console.log('Form validation FAILED');
         }
     });
-    $('#productForm #addProduct').click(function(e) {
+    $('#productForm').on('submit', function(e) {
         e.preventDefault();
         let productName, productNumber, unitPrice, quantityInStock, supplier, dateSupplied;
         productName = $('#productName').val();

@@ -15,14 +15,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../css/util.css">
     <link rel="stylesheet" href="./css/forms.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-    <script src="./js/loginForm.js" async defer></script>
+    <script src="./js/main.js" async defer></script>
+    <script src="./js/forms/loginForm.js" async defer></script>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-classic-blue">
             <ul class="navbar-nav mr-auto">
@@ -36,17 +37,17 @@
                     <a class="nav-link my-nav-text-color" href="../index.html">W2D3</a>
                 </li>
                 <li class="nav-item border-left mx-2 active">
-                    <a class="nav-link my-nav-text-color" href="./loginForm.html">Login Form</a>
+                    <a class="nav-link my-nav-text-color" href="./loginForm.html">Login</a>
                 </li>
                 <li class="nav-item border-left mx-2">
-                    <a class="nav-link my-nav-text-color" href="./productForm.html">New Product Form</a>
+                    <a class="nav-link my-nav-text-color" href="./productForm.html">Product</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="content">
-            <form class="needs-validation form1">
+            <form class="needs-validation form1" id="loginForm">
                 <div class="form-group">
                     <label for="inputEmail">Email address</label>
                     <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
@@ -61,11 +62,11 @@
                     <input type="url" class="form-control" id="inputURL" placeholder="URL" pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$" required>
                 </div>
                 <div class="form-check form-group">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <input type="checkbox" class="form-check-input" id="checkedBox">
+                    <label class="form-check-label" for="checkedBox">Check me out</label>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary" onclick="displayForm1Info()">Submit</button>
+                    <button id="submitForm" type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
         </div>

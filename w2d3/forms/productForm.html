@@ -15,14 +15,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../css/util.css">
     <link rel="stylesheet" href="./css/forms.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-    <script src="./js/productForm.js" async defer></script>
+    <script src="./js/main.js" async defer></script>
+    <script src="./js/utility/util.js" async defer></script>
+    <script src="./js/forms/productForm.js" async defer></script>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-classic-blue">
             <ul class="navbar-nav mr-auto">
@@ -36,10 +41,10 @@
                     <a class="nav-link my-nav-text-color" href="../index.html">W2D3</a>
                 </li>
                 <li class="nav-item border-left mx-2">
-                    <a class="nav-link my-nav-text-color" href="./loginForm.html">Login Form</a>
+                    <a class="nav-link my-nav-text-color" href="./loginForm.html">Login</a>
                 </li>
                 <li class="nav-item active border-left mx-2">
-                    <a class="nav-link my-nav-text-color" href="./productForm.html">New Product Form</a>
+                    <a class="nav-link my-nav-text-color" href="./productForm.html">Product</a>
                 </li>
             </ul>
         </nav>
@@ -47,7 +52,7 @@
 
     <main>
         <div class="content">
-            <form class="needs-validation form2">
+            <form class="needs-validation form2" id="productForm">
                 <div class="form-group row">
                     <div class="col">
                         <label for="productNumber">Product Number</label>
@@ -69,7 +74,7 @@
                         <select class="browser-default custom-select" id="supplier">
                                 <option selected>Select a supplier</option>
                                 <option value="1">Walmart</option>
-                                <option value="2">Cosco</option>
+                                <option value="2">Costco</option>
                                 <option value="3">Hyvee</option>
                             </select>
                     </div>
@@ -90,7 +95,11 @@
                 <div class="text-right">
                     <button type="reset" class="btn btn-outline-dark mr-5">Reset</button>
                     <button class="btn btn-outline-danger mr-5">Cancel</button>
-                    <button class="btn btn-outline-primary" onclick="displayForm2Info()">Add Product</button>
+                    <button class="btn btn-outline-primary" id="addProduct" data-toggle="collapse" data-target="#collapseArea" aria-expanded="false" aria-controls="collapseArea">Add Product</button>
+                </div>
+
+                <div class="collapse text-center mt-2" id="collapseArea">
+                    <div class="card card-body alert alert-secondary" id="result" role="alert"></div>
                 </div>
             </form>
         </div>

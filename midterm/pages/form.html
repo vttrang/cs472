@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron'>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand navbar-dark bg-classic-blue">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <span class="navbar-brand mb-0 h1">Midterm</span>
+                </li>
+                <li class="nav-item border-left mx-2 ">
+                    <a class="nav-link my-nav-text-color" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item  border-left mx-2 active">
+                    <a class="nav-link my-nav-text-color" href="./pages/form.html">Form</a>
+                </li>
+            </ul>
+
+            <div id="clock" class="clock mr-2 text-light"></div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <!-- FORM BEGIN -->
+            <form id="frm" class="mb-5">
+                <div class="form-group">
+                    <label for="inputFullName">*Full Name</label>
+                    <input type="text" class="form-control" id="inputFullName" placeholder="Enter your Full Name" required>
+                    <small id="inputFullNameHelp" class="form-text text-muted">Enter your Full Name as printed on your ID.</small>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCitizenID">*Citizen ID</label>
+                        <input type="text" class="form-control" id="inputCitizenID" pattern="^\d{10}$" placeholder="XXXXXXXXX" required>
+                        <small id="inputIDHelp" class="form-text text-muted ">Enter your ID as printed on your ID.</small>
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <label for="inputSSN">*SSN</label>
+                        <input type="text" class="form-control" id="inputSSN" pattern="[0-9]{3}[0-9]{2}[0-9]{4}" placeholder="XXX-XX-XXXX" required>
+                        <small id="inputSSNHelp " class="form-text text-muted ">Enter your SSN as printed on your ID.</small>
+                    </div>
+                </div>
+
+                <div class="form-row ">
+                    <div class="form-group col-md-6 ">
+                        <label for="inputState">*State</label>
+                        <select id="inputState" class="form-control" required>
+                            <option selected value="">Select state</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="New Mexico">New Mexico</option>
+                            <option value="Texas">Texas</option>
+                        </select>
+                        <small id="selectStateHelp " class="form-text text-muted ">Select your State.</small>
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <legend class="col-form-label ">*Senior Citizen</legend>
+                        <div class="form-check form-check-inline ml-3 ">
+                            <input class="form-check-input" type="radio" name="seniorCitizen" id="inlineCheckbox1" value="Yes" required>
+                            <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline ml-3 ">
+                            <input class="form-check-input" type="radio" name="seniorCitizen" id="inlineCheckbox2" value="No" required>
+                            <label class="form-check-label" for="inlineCheckbox2">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row float-right ">
+                    <button type="reset" class="btn btn-secondary mr-3 ">Reset</button>
+                    <button type="submit" class="btn btn-primary mr-2 ">Add</button>
+                </div>
+            </form>
+            <!-- FROM END -->
+            <h2 class="text-center">Table</h2>
+            <!-- TABLE BEGIN -->
+            <table class="table table-striped pt-5 " id="tbl">
+                <thead>
+                    <tr>
+                        <th scope="col">Citizen ID</th>
+                        <th scope="col">Social Security</th>
+                        <th scope="col">Full Name</th>
+                        <th scope="col">State</th>
+                        <th scope="col">Senior Citizen</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <!-- TABLE END -->
+
+        </div>
+    </main>
+
+    <footer class="bg-secondary clearfix text-light ">
+        <div class="float-left ml-3 ">The Vinh Trang</div>
+        <div class="float-right mr-3 ">@ April 2020</div>
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>
+
+</html>
